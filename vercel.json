@@ -1,16 +1,16 @@
 {
 	"version": 2,
-	"name": "api-gate-vercel",
+	"name": "api-expedicao",
 	"builds": [
 	 {
-	 "src": "server.js",
+	 "src": "index.js",
 	 "use": "@vercel/node"
 	 }
 	],
 	"routes": [
          {
 	 "src": "/(.*)",
-	 "dest": "/server.js"
+	 "dest": "/index.js"
 	 }
 	]
 }
