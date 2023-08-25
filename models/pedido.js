@@ -6,7 +6,7 @@ const pedidoSchema = new mongoose.Schema({
     nu_pedido: Number,
     nm_cliente: String,
     model: String,
-    len: Number,
+    len: String,
     codigo: String,
     tara: String,
     peso: Number,
