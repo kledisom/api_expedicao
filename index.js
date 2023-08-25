@@ -67,7 +67,7 @@ app.get('/read/rte/:cod', async (req, res) => {
         Rte.find()
             .then(rte => res.json(rte))
     } else {
-        Rte.find({ cod: flag })
+        Rte.find({ desc: flag })
             .then(rte => res.json(rte))
     };
 });
