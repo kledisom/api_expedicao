@@ -154,8 +154,16 @@ app.delete('/delete', (req, res) => {
         .then(pessoa => res.json(pessoa))
 });
 
+//itau
+app.get('/pgly-pix-webhook', (req, res) => {
+    console.log(req.body);
+});
 
 
 app.listen(port, () => {
     console.log(` ⌛ ouvindo na porta ${port}`);
 });
+
+
+
+
