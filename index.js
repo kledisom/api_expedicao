@@ -89,7 +89,7 @@ app.get('/read/tara/:cod', async (req, res) => {
 app.delete('/delete/pedido/:id', (req, res) => {
     const idref = req.params.id
 
-    Pedido.findOneAndDelete({ id: idref })
+    Pedido.findOneAndDelete({ _id: idref })
         .then(pedido => res.json(pedido))
 });
 
